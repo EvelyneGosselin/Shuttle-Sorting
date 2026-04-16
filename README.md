@@ -7,7 +7,7 @@ The chosen problem is the shuttle crowd ranking, which hekps coordinates the dec
 The chosen algorithm is Merge Sort. This problem is adapted to it because it is adapted for any size of lists of integers, compare to quicksort which can get to a higher complexity and isn't worth it in the context of a shorter list of crowd_count. It is also good since merge sort is stable so the changing ranking can keep the order of equal crowd_count the same as the previous ones.
 
 ## Demo
-! [App Demo](18.30.49.gif)
+! [App Demo](12026-04-15 18.30.49.gif)
 
 ## Problem Breakdown & Computational Thinking
 - Decomposition: Merge sorts algorithms can be separated in spliting the list, in this context list of stop, in half. Then, each half is sorted by splitting them continuously until each element is individual and comparing the elements to put the higher crowd_count first. Then, the two halves are merged by comparing each element and putting them in the final ranked list.
