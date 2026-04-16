@@ -19,15 +19,28 @@ The chosen algorithm is Merge Sort. This problem is adapted to it because it is 
 Requirements.txt -> gradio
 Steps to run:
     1. Install the dependencies, through requirements.txt which installs gradio
-    2. Run the app on a Python 
+    2. Run the app on a Python platform (coded on Jupyter Notebook)
+    3. Open the notebook and run with "Restart and run all"
     
 ## Testings
-<img width="740" height="350" alt="Capture d’écran, le 2026-04-15 à 18 39 52" src="https://github.com/user-attachments/assets/ae2f673b-3ae7-4db0-884e-d8b111715f1c" />
+- The first testing was only the original list of stops, which is included in the original code to make sure the app is never empty. The sorting was successful which proved that the merge sort works:
+<img width="714" height="256" alt="Capture d’écran, le 2026-04-15 à 20 49 59" src="https://github.com/user-attachments/assets/d535e6f3-47a5-46ce-a92a-ae9100b2513c" />
+The other main action, addind a stop, also works as shown in the demo video.
+
+- The second was make sure that the code was handling the absence of input. A missing stop name was correctly handled with an error message:
+<img width="740" height="350" alt="Capture d’écran, le 2026-04-15 à 18 39 52" src="https://github.com/user-attachments/assets/22bc6ba4-e1b7-402e-9416-36d4d0b55eef" />
+However, the absence of a crowd count wasn't handled and raised errors in the code itself:
+<img width="759" height="510" alt="Capture d’écran, le 2026-04-15 à 18 55 22" src="https://github.com/user-attachments/assets/4e4fa1d6-0157-4773-9c88-50f1c059d2ed" />
+Another lign was added to the validate_input function to raise an appropriate error message:
+<img width="751" height="347" alt="Capture d’écran, le 2026-04-15 à 19 00 30" src="https://github.com/user-attachments/assets/f101f947-fb12-4800-9bd8-0524bec5307f" />
+
+- Finally, I checked the edge case of crowd_count having an input, but not in a integer type. The test was successful since the algorithm didn't add the stop to the list and printed an appropriate error message:
+<img width="729" height="339" alt="Capture d’écran, le 2026-04-15 à 19 04 13" src="https://github.com/user-attachments/assets/f211a6d7-e6b8-4648-952c-78805592e11d" />
 
 ## Hugging Face Link
-https://huggingface.co/spaces/Evelyne06/Shuttle-Sorting
+[Live App](https://huggingface.co/spaces/Evelyne06/Shuttle-Sorting)
 
 ## Author & AI Acknowledgment
 - Author : Evelyne Gosselin
 - Class : CISC121
-- AI Use : Claude was used 
+- AI Use : Claude was used to give a few ideas for the code, explain how to use the GUI, summarize all the files needed and their function as well as make sure I wasn't missing any key edge case.
