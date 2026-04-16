@@ -44,3 +44,4 @@ Another lign was added to the validate_input function to raise an appropriate er
 - Author : Evelyne Gosselin
 - Class : CISC121
 - AI Use : Claude was used to give a few ideas for the code, explain how to use the GUI, summarize all the files needed and their function as well as make sure I wasn't missing any key edge case.
+- CISC121 class lecture PowerPoints used
